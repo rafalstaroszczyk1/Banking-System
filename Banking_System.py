@@ -105,6 +105,7 @@ class BankingSystem:
             else:
                 self.check_sum = str(0)
             self.card_number = int(card_number + self.check_sum)
+        return self.card_number
 
     def create_account(self):
         print(f'\nYour card has been created\n'
